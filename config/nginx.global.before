@@ -1,0 +1,2 @@
+# Settings inside this file will be included BEFORE all the server {} blocks in
+# the global file.
