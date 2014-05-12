@@ -4,8 +4,8 @@
 	"type": "Drupal",
 	"version": "7",
 	"features": [
-		"php",
-		"pretty-urls"
+		"PHP",
+		"PrettyURLs"
 	],
 	"environment": "production",
 	"fqdn": "www.mocksite.com",
