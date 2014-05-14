@@ -2,43 +2,13 @@
 	"repository-root": "[automatically generated in code]/",
 	"title": "Mock Site",
 	"type": "Drupal",
-	"version": "7",
-	"features": [
-		"PHP",
-		"PrettyURLs"
-	],
+	"drupal": {
+		"version": "7"
+	},
 	"environment": "production",
 	"fqdn": "www.mocksite.com",
 	"webroot": "mocksite.com",
 	"php-fpm": {
 		"max_children": 20
 	},
-	"drupal": {
-		"modules": {
-			"enable": [
-				"admin_menu",
-				"adminimal_admin_menu",
-				"ctools",
-				"nodequeue",
-				"pathauto",
-				"module_filter",
-				"token",
-				"entity",
-				"xautoload",
-				"less",
-				"devel",
-				"uuid",
-				"menu_entity"
-			],
-			"disable": [
-				"update"
-			]
-		},
-		"profile": "minimal",
-		"default_credentials": {
-			"email": "admin@example.org",
-			"username": "admin",
-			"password": "admin"
-		}
-	}
 }
