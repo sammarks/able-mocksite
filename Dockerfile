@@ -23,7 +23,6 @@ ADD . /opt/repo
 RUN /usr/bin/able site:install /opt/repo
 
 EXPOSE 80
-EXPOSE 443
 
 # Install Supervisor
 RUN /usr/bin/easy_install supervisor
