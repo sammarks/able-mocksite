@@ -13,6 +13,7 @@ RUN /usr/bin/git clone https://github.com/sammarks/able /usr/local/able
 WORKDIR /usr/local/able
 RUN /usr/bin/composer install
 RUN ln -s /usr/local/able/able /usr/bin/able
+RUN chmod a+x /usr/bin/able
 
 # Install Application
 RUN mkdir -p /opt/repo
