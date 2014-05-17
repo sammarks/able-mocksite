@@ -1,14 +1,14 @@
 {
-	"repository-root": "[automatically generated in code]/",
 	"title": "Mock Site",
-	"type": "Drupal",
 	"drupal": {
 		"version": "7"
 	},
 	"environment": "production",
 	"fqdn": "www.mocksite.com",
 	"webroot": "mocksite.com",
-	"php-fpm": {
-		"max_children": 20
-	},
+	"configuration": {
+		"FPM": {
+			"max_children": 20
+		}
+	}
 }
