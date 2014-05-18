@@ -7,8 +7,8 @@
 	"fqdn": "www.mocksite.com",
 	"webroot": "mocksite.com",
 	"configuration": {
-		"FPM": {
-			"max_children": 20
+		"FPMPool": {
+			"max_children": 30
 		}
 	}
 }
