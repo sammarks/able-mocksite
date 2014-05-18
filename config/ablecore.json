@@ -3,7 +3,7 @@
 	"drupal": {
 		"version": "7"
 	},
-	"environment": "production",
+	"environment": "Production",
 	"fqdn": "www.mocksite.com",
 	"webroot": "mocksite.com",
 	"configuration": {
