@@ -55,7 +55,7 @@ projects[uuid][version] = "1.0-alpha5"
 projects[menu_entity][type] = "module"
 projects[menu_entity][subdir] = "contrib"
 projects[menu_entity][download][type] = "git"
-projects[menu_entity][download][url] = "sammarks15@git.drupal.org:sandbox/sammarks15/2231077.git"
+projects[menu_entity][download][url] = "http://git.drupal.org/sandbox/sammarks15/2231077.git"
 projects[menu_entity][download][branch] = "7.x-1.x"
 
 ; Libraries
