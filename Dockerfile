@@ -20,7 +20,7 @@ RUN mkdir -p /opt/repo
 ADD . /opt/repo
 
 # Tell Able Core to install the website.
-RUN /usr/bin/able site:install /opt/repo
+RUN /usr/bin/able site:install /opt/repo -v
 
 EXPOSE 80
 
