@@ -1,8 +1,5 @@
 {
 	"title": "Mock Site",
-	"drupal": {
-		"version": "7"
-	},
 	"environment": "Production",
 	"fqdn": "www.mocksite.com",
 	"webroot": "mocksite.com",

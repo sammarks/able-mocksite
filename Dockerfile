@@ -19,12 +19,6 @@ RUN chmod a+x /usr/bin/able
 RUN mkdir -p /opt/repo
 ADD . /opt/repo
 
-# Forward RDS environment variables.
-ENV RDS_USERNAME "$RDS_USERNAME"
-ENV RDS_PASSWORD "$RDS_PASSWORD"
-ENV RDS_DB_NAME "$RDS_DB_NAME"
-ENV RDS_HOSTNAME "$RDS_HOSTNAME"
-
 # Tell Able Core to install the website.
 RUN /usr/bin/able site:install /opt/repo -v
 
