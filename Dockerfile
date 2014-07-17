@@ -9,7 +9,7 @@ RUN /usr/bin/curl -sS https://getcomposer.org/installer | php
 RUN mv composer.phar /usr/bin/composer
 
 # Install Able Core CLI
-RUN /usr/bin/git clone https://github.com/sammarks/able /usr/local/able
+RUN /usr/bin/git clone --branch=develop https://github.com/sammarks/able /usr/local/able
 WORKDIR /usr/local/able
 RUN /usr/bin/composer install
 RUN ln -s /usr/local/able/able /usr/bin/able
