@@ -11,7 +11,7 @@ RUN mv composer.phar /usr/bin/composer
 # Install Able Core CLI
 RUN /usr/bin/git clone --branch=develop https://github.com/sammarks/able /usr/local/able
 WORKDIR /usr/local/able
-RUN /usr/bin/composer install --prefer-dist
+RUN /usr/bin/composer install --prefer-source
 RUN ln -s /usr/local/able/able /usr/bin/able
 RUN chmod a+x /usr/bin/able
 
