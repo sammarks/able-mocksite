@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 
 # Install Dependencies
 RUN apt-get update -y
-RUN apt-get install -y git curl nginx php5 php5-fpm php5-mysql php5-mcrypt php5-curl php5-gd mysql-client drush wget unzip
+RUN apt-get install -y git curl nginx php5 php5-fpm php5-mysql php5-mcrypt php5-curl php5-gd mysql-client drush wget unzip python-setuptools
 
 # Install Composer
 RUN /usr/bin/curl -sS https://getcomposer.org/installer | php
