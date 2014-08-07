@@ -28,4 +28,8 @@ EXPOSE 80
 RUN /usr/bin/easy_install supervisor
 RUN /usr/bin/easy_install supervisor-stdout
 
+# Stop services.
+RUN service php5-fpm stop
+RUN service nginx stop
+
 RUN /usr/local/bin/supervisord -n -c /etc/supervisord.conf
