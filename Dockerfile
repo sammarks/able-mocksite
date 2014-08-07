@@ -28,4 +28,4 @@ EXPOSE 80
 RUN /usr/bin/easy_install supervisor
 RUN /usr/bin/easy_install supervisor-stdout
 
-RUN /usr/local/bin/supervisord -n
+RUN /usr/local/bin/supervisord -n -c /etc/supervisord.conf
