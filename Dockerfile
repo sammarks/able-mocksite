@@ -22,9 +22,6 @@ ADD . /opt/repo
 # Tell Able Core to install the website.
 RUN /usr/bin/able site:install /opt/repo -v
 
-# Forward port 80.
-EXPOSE 80
-
 # Install Supervisor
 RUN /usr/bin/easy_install supervisor
 RUN /usr/bin/easy_install supervisor-stdout
@@ -33,4 +30,9 @@ RUN /usr/bin/easy_install supervisor-stdout
 RUN service php5-fpm stop
 RUN service nginx stop
 
-RUN /usr/local/bin/supervisord -n -c /etc/supervisord.conf
+# Set the default command.
+CMD ["/usr/local/bin/supervisord", "-n", "-c", "/etc/supervisord.conf"]
+
+# Expose ports.
+EXPOSE 80;
+EXPOSE 443;
