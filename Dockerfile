@@ -32,7 +32,3 @@ RUN service nginx stop
 
 # Set the default command.
 CMD ["/usr/local/bin/supervisord", "-n", "-c", "/etc/supervisord.conf"]
-
-# Expose ports.
-EXPOSE 80;
-EXPOSE 443;
