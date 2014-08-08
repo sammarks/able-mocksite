@@ -22,6 +22,7 @@ ADD . /opt/repo
 # Tell Able Core to install the website.
 RUN /usr/bin/able site:install /opt/repo -v
 
+# Forward port 80.
 EXPOSE 80
 
 # Install Supervisor
