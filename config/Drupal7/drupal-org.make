@@ -4,9 +4,8 @@ api = 2
 ; Modules
 ; -------
 
-projects[drupal][version] = 7.26
-projects[drupal][patch][] = "https://drupal.org/files/issues/drupal7_1978176_32_menu_load_objects.patch"
-projects[drupal][patch][] = "https://drupal.org/files/issues/drupal7.entity-system.1525176-143.patch"
+projects[drupal][version] = 7.31
+projects[drupal][patch][] = "https://www.drupal.org/files/issues/drupal-1978176-menu_load_objects.patch"
 
 projects[admin_menu][subdir] = "contrib"
 projects[admin_menu][version] = "3.0-rc4"
